@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Haraa Gold & Diamonds Design System
+Royal Blue, White, and Gold luxury palette with elegant typography
+*/
+
+@layer base {
+  :root {
+    /* Base colors - Pure luxury palette */
+    --background: 0 0% 100%;
+    --foreground: 220 15% 25%;
+
+    /* Royal Blue primary brand color (#1E40AF) */
+    --primary: 244 43% 12%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 225 71% 50%;
+    --primary-dark: 225 71% 30%;
+
+    /* Elegant gold accents */
+    --gold: 45 85% 55%;
+    --gold-light: 45 85% 70%;
+    --gold-dark: 45 85% 45%;
+
+    /* Sophisticated secondary palette */
+    --secondary: 220 15% 96%;
+    --secondary-foreground: 220 15% 25%;
+
+    /* Card and surface colors */
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 25%;
+
+    /* Muted and accent colors */
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 220 15% 94%;
+    --accent-foreground: 220 15% 25%;
+
+    /* Utility colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 223 87% 34%;
+
+    --radius: 0.75rem;
+
+    /* Luxury gradients */
+    --gradient-royal: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--gold-dark)), hsl(var(--gold-light)));
+    --gradient-elegant: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+
+    /* Shadows for luxury depth */
+    --shadow-luxury: 0 20px 40px -10px hsl(var(--primary) / 0.1);
+    --shadow-elegant: 0 10px 30px -10px hsl(220 15% 25% / 0.08);
+    --shadow-gold: 0 8px 25px -8px hsl(var(--gold) / 0.3);
+
+    /* Animation timing */
+    --transition-luxury: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-elegant: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode maintains luxury with deep royal blue */
+    --background: 223 87% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 223 87% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 223 87% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 0% 95%;
+    --primary-foreground: 223 87% 8%;
+
+    --secondary: 223 20% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 223 30% 12%;
+    --muted-foreground: 220 10% 65%;
+
+    --accent: 223 30% 15%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 223 30% 18%;
+    --input: 223 30% 18%;
+    --ring: 0 0% 95%;
+
+    --gradient-royal: linear-gradient(135deg, hsl(var(--primary-dark)), hsl(var(--primary)));
+    --gradient-elegant: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Typography hierarchy */
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Luxury utility classes */
+  .luxury-shadow {
+    box-shadow: var(--shadow-luxury);
+  }
+
+  .elegant-shadow {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .gold-shadow {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .transition-luxury {
+    transition: var(--transition-luxury);
+  }
+
+  .transition-elegant {
+    transition: var(--transition-elegant);
+  }
+
+  /* Gradient backgrounds */
+  .bg-gradient-royal {
+    background: var(--gradient-royal);
+  }
+
+  .bg-gradient-gold {
+    background: var(--gradient-gold);
+  }
+
+  .bg-gradient-elegant {
+    background: var(--gradient-elegant);
+  }
+}
+
+
+.whatsapp-button { position: fixed; bottom: 20px;  right: 20px;  background-color: transparent; }
+.whatsapp-button:hover{opacity: 0.7;}
