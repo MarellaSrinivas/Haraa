@@ -4,6 +4,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import bridalImage from "@/assets/bridal-collection.jpg";
 import dailyWearImage from "@/assets/daily-wear.jpg";
 import limitedEditionImage from "@/assets/limited-edition.jpg";
+import whatsappimage from "@/assets/whatsapp.png";
+
 
 const Collections = () => {
   const collections = [
