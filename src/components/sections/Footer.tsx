@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import whatsappimg from "@/assets/whatsapp.png";
+import { Input } from "@/components/ui/input"; 
 import { Facebook, Instagram, MessageCircle , Youtube, Mail } from "lucide-react";
  
 
@@ -145,7 +144,7 @@ const Footer = () => {
         </div>
 
              <a href="https://wa.me/+918019180099" className="whatsapp-button" target="_blank" title="Chat on WhatsApp">
-                <img src={whatsappimg} width="60px" height="60px" alt="WhatsApp" />
+                <img src="./../assets/whatsapp-c_7pjfz1.png" width="60px" height="60px" alt="WhatsApp" />
               </a> 
       </div>
     </footer>
